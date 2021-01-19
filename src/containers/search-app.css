@@ -1,0 +1,16 @@
+.container {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.containerWithContent {
+    margin: 48px auto 0 auto;
+    transition: .3s;
+}
+
+.containerWithoutContent {
+    margin: 40vh auto 0 auto;
+    transition: .3s;
+}

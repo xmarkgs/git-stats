@@ -1,0 +1,22 @@
+.searchInput {
+    background: #F2F6F8;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 48px;
+    font-size: 24px;
+    color: #2F2F2F;
+    margin-top: 24px;
+}
+
+.searchInput::placeholder {
+    color: #8E8E8E;
+}
+
+.searchInput:focus {
+    outline: 0;
+    border: 1px solid #696969;
+}

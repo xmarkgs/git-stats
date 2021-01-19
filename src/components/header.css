@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logoSubText {
+    font-size: 18px;
+    color: #2F2F2F;
+    text-align: center;
+}
