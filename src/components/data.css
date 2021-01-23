@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     margin-top: 48px;
+    padding-bottom: 24px;
 }
 
 .user-media {
@@ -37,6 +38,7 @@
 
 .user-media-stats span {
     font-size: 12px;
+    margin-top: 6px;
 }
 
 .user-info {
@@ -83,7 +85,33 @@
     display: flex;
     flex-direction: column;
     margin-top: 24px;
+    overflow: hidden;
 }
+
+.account-repos-row div.repo:nth-child(2), .account-repos-row div.repo:nth-child(3), .account-repos-row div.repo:nth-child(4) {
+    display: flex;
+    width: 100%;
+}
+
+div.account-repos-row.openedRepos div.repo{
+    display: flex !important;
+    animation: repoAppear .3s;
+    animation-fill-mode: forwards;
+}
+
+div.account-repos-row.openedRepos  div.repo:nth-child(2), .account-repos-row.openedRepos div.repo:nth-child(3), .account-repos-row.openedRepos div.repo:nth-child(4) {
+    animation: none;
+}
+
+@keyframes repoAppear {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 
 .account-repos-row>a {
     font-size: 18px;
@@ -96,15 +124,16 @@
 }
 
 .repo {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 0;
     padding: 24px 10px;
     border: 1px solid #696969;
     box-sizing: border-box;
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
     margin-top: 6px;
+    overflow: hidden;
 }
 
 .repo div:nth-child(1) {
@@ -146,4 +175,11 @@
     font-size: 18px;
     color: #FF7070;
     font-weight: normal;
+}
+
+.find-more-link {
+    font-size: 14px !important;
+    color: #006EF0 !important;
+    text-decoration: none !important;
+    margin-top: 6px;
 }
